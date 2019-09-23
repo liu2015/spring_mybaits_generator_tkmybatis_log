@@ -84,4 +84,15 @@ public class User {
     public void setQuanxian(String quanxian) {
         this.quanxian = quanxian;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", passwrod='" + passwrod + '\'' +
+                ", jiaose='" + jiaose + '\'' +
+                ", quanxian='" + quanxian + '\'' +
+                '}';
+    }
 }
