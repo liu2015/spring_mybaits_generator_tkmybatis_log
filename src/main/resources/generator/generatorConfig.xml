@@ -24,7 +24,7 @@
         <!--这里取消了jdbc。properties 配置，直接写入到jdbc 连接里-->
         <jdbcConnection
                 driverClass="com.mysql.cj.jdbc.Driver"
-                connectionURL="jdbc:mysql://cdb-kx7bfwy2.bj.tencentcdb.com:10187/mybatistest?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true&amp;serverTimezone=UTC"
+                connectionURL="jdbc:mysql://cdb-kx7bfwy2.bj.tencentcdb.com:10187/mybatis_shiro?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true&amp;serverTimezone=UTC"
                 userId="liu"
                 password="Liu1988226">
             <!--                        <property name="nullCatalogMeansCurrent" value="true" />-->
