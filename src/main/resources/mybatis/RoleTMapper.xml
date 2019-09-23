@@ -7,5 +7,7 @@
     -->
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="role" jdbcType="VARCHAR" property="role" />
+    <result column="permissions" jdbcType="VARCHAR" property="permissions" />
+    <result column="users" jdbcType="VARCHAR" property="users" />
   </resultMap>
 </mapper>

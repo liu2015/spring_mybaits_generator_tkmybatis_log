@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Table(name = "user_t")
 public class UserT {
@@ -13,6 +14,8 @@ public class UserT {
     private String salt;
 
     private String username;
+
+    private List<RoleT> roles;
 
     /**
      * @return id
@@ -69,4 +72,27 @@ public class UserT {
     public void setUsername(String username) {
         this.username = username;
     }
+
+    /**
+     * @return roles
+     */
+    public List<RoleT> getRoles() {
+        return roles;
+    }
+
+    /**
+     * @param roles
+     */
+    public void setRoles(List<RoleT> roles) {
+        this.roles = roles;
+    }
+    public String getCredentialsSalt() {
+        return username + salt + salt;
+    }
+
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", username=" + username + "]";
+    }
+
 }
