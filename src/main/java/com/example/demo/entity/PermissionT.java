@@ -10,6 +10,8 @@ public class PermissionT {
 
     private String name;
 
+    private String roles;
+
     /**
      * @return id
      */
@@ -36,5 +38,19 @@ public class PermissionT {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * @return roles
+     */
+    public String getRoles() {
+        return roles;
+    }
+
+    /**
+     * @param roles
+     */
+    public void setRoles(String roles) {
+        this.roles = roles;
     }
 }

@@ -10,6 +10,10 @@ public class RoleT {
 
     private String role;
 
+    private String permissions;
+
+    private String users;
+
     /**
      * @return id
      */
@@ -36,5 +40,33 @@ public class RoleT {
      */
     public void setRole(String role) {
         this.role = role;
+    }
+
+    /**
+     * @return permissions
+     */
+    public String getPermissions() {
+        return permissions;
+    }
+
+    /**
+     * @param permissions
+     */
+    public void setPermissions(String permissions) {
+        this.permissions = permissions;
+    }
+
+    /**
+     * @return users
+     */
+    public String getUsers() {
+        return users;
+    }
+
+    /**
+     * @param users
+     */
+    public void setUsers(String users) {
+        this.users = users;
     }
 }
