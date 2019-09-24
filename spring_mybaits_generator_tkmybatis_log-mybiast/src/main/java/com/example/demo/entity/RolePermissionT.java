@@ -3,7 +3,7 @@ package com.example.demo.entity;
 import javax.persistence.*;
 
 @Table(name = "role_permission_t")
-public class RolePermissionT {
+public class RolePermissionT extends PermissionT {
     private Integer pid;
 
     private Integer rid;

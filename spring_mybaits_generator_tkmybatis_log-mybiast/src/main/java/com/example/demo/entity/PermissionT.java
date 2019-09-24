@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Table(name = "permission_t")
 public class PermissionT {
@@ -10,7 +11,7 @@ public class PermissionT {
 
     private String name;
 
-    private String roles;
+    private List<RoleT> roles;
 
     /**
      * @return id
@@ -43,14 +44,14 @@ public class PermissionT {
     /**
      * @return roles
      */
-    public String getRoles() {
+    public List<RoleT> getRoles() {
         return roles;
     }
 
     /**
      * @param roles
      */
-    public void setRoles(String roles) {
+    public void setRoles(List<RoleT> roles) {
         this.roles = roles;
     }
 }
