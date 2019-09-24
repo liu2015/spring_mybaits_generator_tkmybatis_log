@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.userservice;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class usercontroller {
     @Autowired
-    userservice userservice;
+    com.example.demo.service.userservice userservice;
 
     @RequestMapping("login")
     public String login(String name,String password) {
