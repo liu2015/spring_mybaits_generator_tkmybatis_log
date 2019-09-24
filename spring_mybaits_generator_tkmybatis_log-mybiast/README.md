@@ -1,0 +1,3 @@
+# spring_mybaits_generator_tkmybatis_log
+
+这个可以是配置了一些基础，可以省去很多参数配置
